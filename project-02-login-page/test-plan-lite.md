@@ -32,7 +32,6 @@ https://practicetestautomation.com/practice-test-login/
 
 ## Environment
 - Opera GX 128.0.5807.97, Windows
-- Google app, iOS 18.6.2
 
 ## Risks
 - This is a demo practice website, so some behaviors may be intentionally simplified

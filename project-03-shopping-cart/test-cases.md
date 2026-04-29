@@ -93,4 +93,20 @@ User gets the information about his favorites
 User successfuly can add  clothes (но конкретно в этом сайте корзина открывается с вернхней части страницы, а не новая страница)
 
 
+## TC-007 — Add product to cart from product details page
+
+**Priority:** High / Medium / Low  
+**Preconditions:** 
+- Internet connection is stable
+- Product details are already opened
+
+**Steps:**
+1. Found a add to cart button
+2. Press enter to cart button
+3.
+
+**Expected Result:**
+User successfuly added his product to cart
+
+
 

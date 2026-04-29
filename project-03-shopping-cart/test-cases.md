@@ -1,6 +1,6 @@
 ## TC-001 — Open home page
 
-**Priority:** High / Medium / Low  
+**Priority:** High 
 **Preconditions:** 
 - Internet connection is stable
 - Homepage is already opened
@@ -16,7 +16,7 @@ I'm already on the homepage so website is just refreshed himself
 
 ## TC-002 — Open catalog page
 
-**Priority:** High / Medium / Low  
+**Priority:** High 
 **Preconditions:** 
 - Internet connection is stable
 - Homepage is already opened
@@ -32,7 +32,7 @@ User successfuly opened a catalog of the store
 
 ## TC-003 — Open product details page
 
-**Priority:** High / Medium / Low  
+**Priority:** High 
 **Preconditions:** 
 - Internet connection is stable
 - Homepage is already opened
@@ -48,7 +48,7 @@ User succsessfuly got the information about product
 
 ## TC-004 — Navigate back from product page to catalog
 
-**Priority:** High / Medium / Low  
+**Priority:**  Medium 
 **Preconditions:** 
 - Internet connection is stable
 - Product details are already opened
@@ -63,7 +63,7 @@ User successfuly turned back to the catalog page
 
 ## TC-005 — Open cart page
 
-**Priority:** High / Medium / Low  
+**Priority:** High  
 **Preconditions:** 
 - Internet connection is stable
 - Homepage is already opened
@@ -74,28 +74,27 @@ User successfuly turned back to the catalog page
 3.
 
 **Expected Result:**
-User gets the information about his favorites
+User successfuly opened cart page
 
 
 ## TC-006 — Continue shopping from cart
 
-**Priority:** High / Medium / Low  
+**Priority:**  Medium 
 **Preconditions:** 
 - Internet connection is stable
-- Shopping cart is already opened
+- Shopping cart is open
 
 **Steps:**
-1. Open cart
-2. Choose more clothes from catalog while you in cart
-3.
+1. Click the Continue shopping button or return to the catalog
+2. Select another product
 
 **Expected Result:**
-User successfuly can add  clothes (но конкретно в этом сайте корзина открывается с вернхней части страницы, а не новая страница)
+User can return to shopping and continue browsing products without losing the current cart state.
 
 
 ## TC-007 — Add product to cart from product details page
 
-**Priority:** High / Medium / Low  
+**Priority:** Medium 
 **Preconditions:** 
 - Internet connection is stable
 - Product details are already opened
@@ -108,5 +107,109 @@ User successfuly can add  clothes (но конкретно в этом сайт�
 **Expected Result:**
 User successfuly added his product to cart
 
+## TC-008 — Verify product name in cart
+
+**Priority:** Medium 
+**Preconditions:** 
+- Internet connection is stable
+- Product is already in the cart
+**Steps:**
+1. Found a cart icon
+2. Click on the cart icon
+3. 
+
+**Expected Result:**
+Product name in the cart is the same at the catalog
+
+
+## TC-009 — Verify product price in cart
+**Priority:**  Medium  
+**Preconditions:** 
+- Internet connection is stable
+- Product is already in the cart
+
+**Steps:**
+1. Found a cart icon
+2. Click on the cart icon
+3.
+
+**Expected Result:**
+Price in the cart are same to price in the catalog
+
+
+## TC-010 — Verify product quantity in cart
+
+**Priority:**  Medium  
+**Preconditions:** 
+- Internet connection is stable
+- Product is already in the cart
+  
+**Steps:**
+1. Found a cart icon
+2. Click on the cart icon
+3.
+
+**Expected Result:**
+количество товаров в корзине одинаково с количесвтом выбраных товаров
+
+## TC-011 — Remove product from cart
+
+**Priority:** High 
+**Preconditions:** 
+- Internet connection is stable
+- Product is already in the cart
+
+**Steps:**
+1. Found a cart icon
+2. Click on the cart icon
+3. Click on the remove button
+
+**Expected Result:**
+User successfuly removed his product from cart
+
+## TC-012 — Check cart after page refresh
+**Priority:** High
+**Preconditions:**
+- Product is already added to the cart
+
+**Steps:**
+1. Open the cart
+2. Refresh the page
+
+**Expected Result:**
+Cart keeps the added product after page refresh.
+
+## TC-013 — Search for an existing product
+
+**Priority:**  Low  
+**Preconditions:** 
+- Internet connection is stabl
+- Homepage is already opened
+  
+**Steps:**
+1. Found a search field on the website
+2. Click on the search field
+3. Enter the existing product: tomato pasta
+
+**Expected Result:**
+"Nothing found" message from the request
+
+
+## TC-014 — Search for a non-existing product
+
+**Priority:** High / Medium / Low  
+**Preconditions:** 
+- Internet connection is stabl
+- Homepage is already opened
+  
+
+**Steps:**
+1. Found a search field on the website
+2. Click on the search field
+3. Enter the existing product: Grey jacket
+
+**Expected Result:**
+User successfuly found his product
+Note: если вбить: 'grey jacket', то всё так же найдётся, но если вбить 'greyjacket', то получим ответ 'nithing found'
 
 

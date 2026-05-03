@@ -8,7 +8,7 @@
 **Steps:**
 1. Found a home button
 2. Click on the "home' button
-3.
+
 
 **Expected Result:**
 I'm already on the homepage so website is just refreshed himself
@@ -24,7 +24,7 @@ I'm already on the homepage so website is just refreshed himself
 **Steps:**
 1. Found a catalog button
 2. Click on the catalog button
-3.
+
 
 **Expected Result:**
 User successfuly opened a catalog of the store
@@ -56,7 +56,7 @@ User succsessfuly got the information about product
 **Steps:**
 1.  Found a catalog button
 2. click on the catalog button
-3.
+
 
 **Expected Result:**
 User successfuly turned back to the catalog page
@@ -71,7 +71,7 @@ User successfuly turned back to the catalog page
 **Steps:**
 1. Found cart icon or cart button
 2. Click on cart button(icon)
-3.
+
 
 **Expected Result:**
 User successfuly opened cart page
@@ -102,7 +102,7 @@ User can return to shopping and continue browsing products without losing the cu
 **Steps:**
 1. Found a add to cart button
 2. Press enter to cart button
-3.
+
 
 **Expected Result:**
 User successfuly added his product to cart
@@ -116,7 +116,7 @@ User successfuly added his product to cart
 **Steps:**
 1. Found a cart icon
 2. Click on the cart icon
-3. 
+
 
 **Expected Result:**
 Product name in the cart is the same at the catalog
@@ -131,7 +131,7 @@ Product name in the cart is the same at the catalog
 **Steps:**
 1. Found a cart icon
 2. Click on the cart icon
-3.
+
 
 **Expected Result:**
 Price in the cart are same to price in the catalog
@@ -147,7 +147,7 @@ Price in the cart are same to price in the catalog
 **Steps:**
 1. Found a cart icon
 2. Click on the cart icon
-3.
+
 
 **Expected Result:**
 количество товаров в корзине одинаково с количесвтом выбраных товаров

@@ -6,7 +6,7 @@
 - Homepage is already opened
 
 **Steps:**
-1. Found a home button
+1. Find a home button
 2. Click on the "home' button
 
 
@@ -22,7 +22,7 @@ I'm already on the homepage so website is just refreshed himself
 - Homepage is already opened
   
 **Steps:**
-1. Found a catalog button
+1. Find a catalog button
 2. Click on the catalog button
 
 
@@ -38,7 +38,7 @@ User successfuly opened a catalog of the store
 - Homepage is already opened
 
 **Steps:**
-1.  Found a catalog button
+1.  Find a catalog button
 2.  Click on the catalog button
 3.  Click on the random product
 
@@ -54,7 +54,7 @@ User succsessfuly got the information about product
 - Product details are already opened
   
 **Steps:**
-1.  Found a catalog button
+1.  Find a catalog button
 2. click on the catalog button
 
 
@@ -69,7 +69,7 @@ User successfuly turned back to the catalog page
 - Homepage is already opened
   
 **Steps:**
-1. Found cart icon or cart button
+1. Find cart icon or cart button
 2. Click on cart button(icon)
 
 
@@ -100,7 +100,7 @@ User can return to shopping and continue browsing products without losing the cu
 - Product details are already opened
 
 **Steps:**
-1. Found a add to cart button
+1. Find a add to cart button
 2. Press enter to cart button
 
 
@@ -114,7 +114,7 @@ User successfuly added his product to cart
 - Internet connection is stable
 - Product is already in the cart
 **Steps:**
-1. Found a cart icon
+1. Find a cart icon
 2. Click on the cart icon
 
 
@@ -129,7 +129,7 @@ Product name in the cart is the same at the catalog
 - Product is already in the cart
 
 **Steps:**
-1. Found a cart icon
+1. Find a cart icon
 2. Click on the cart icon
 
 
@@ -145,7 +145,7 @@ Price in the cart are same to price in the catalog
 - Product is already in the cart
   
 **Steps:**
-1. Found a cart icon
+1. Find a cart icon
 2. Click on the cart icon
 
 
@@ -160,7 +160,7 @@ Price in the cart are same to price in the catalog
 - Product is already in the cart
 
 **Steps:**
-1. Found a cart icon
+1. Find a cart icon
 2. Click on the cart icon
 3. Click on the remove button
 
@@ -187,7 +187,7 @@ Cart keeps the added product after page refresh.
 - Homepage is already opened
   
 **Steps:**
-1. Found a search field on the website
+1. Find a search field on the website
 2. Click on the search field
 3. Enter the existing product: tomato pasta
 
@@ -204,7 +204,7 @@ Cart keeps the added product after page refresh.
   
 
 **Steps:**
-1. Found a search field on the website
+1. Find a search field on the website
 2. Click on the search field
 3. Enter the existing product: Grey jacket
 

@@ -120,7 +120,7 @@ User successfuly added his product to cart
 
 
 **Expected Result:**
-Product name in the cart is the same at the catalog
+Product name in the cart is the same as the catalog
 
 
 ## TC-009 — Verify product price in cart
@@ -184,7 +184,7 @@ Cart keeps the added product after page refresh.
 
 **Priority:**  Low  
 **Preconditions:** 
-- Internet connection is stabl
+- Internet connection is stable
 - Homepage is already opened
   
 **Steps:**

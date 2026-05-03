@@ -179,7 +179,7 @@ User successfuly removed his product from cart
 **Expected Result:**
 Cart keeps the added product after page refresh.
 
-## TC-013 — Search for an existing product
+## TC-013 — Search for a non-existing product
 
 **Priority:**  Low  
 **Preconditions:** 
@@ -195,7 +195,8 @@ Cart keeps the added product after page refresh.
 "Nothing found" message from the request
 
 
-## TC-014 — Search for a non-existing product
+## TC-014 —  Search for an existing product
+
 
 **Priority:** High / Medium / Low  
 **Preconditions:** 
@@ -210,6 +211,6 @@ Cart keeps the added product after page refresh.
 
 **Expected Result:**
 User successfuly found his product
-Note: если вбить: 'grey jacket', то всё так же найдётся, но если вбить 'greyjacket', то получим ответ 'nithing found'
+
 
 

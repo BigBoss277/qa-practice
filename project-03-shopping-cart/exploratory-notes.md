@@ -1,17 +1,17 @@
 # Exploratory Testing Notes
 
 ## Feature tested
-Practice Test Login page  
-`https://practicetestautomation.com/practice-test-login/`
+Practice Test Shopping cart website  
+https://sauce-demo.myshopify.com
 
 ## Environment
-- Opera GX 128.0.5807.97, Windows
+- Opera GX 130.0.5847.58, Windows
 
 ## Session time
 - More than 1 hour
 
 ## Goal of session
-Explore login page behavior with unusual, edge-case, and mixed input scenarios.
+Explore website pages behavior with unusual, edge-case, and mixed scenarios.
 
 ## What was checked
 - Valid username and password

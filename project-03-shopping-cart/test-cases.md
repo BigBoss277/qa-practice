@@ -3,16 +3,17 @@
 **Priority:** High 
 **Preconditions:** 
 - Internet connection is stable
-- Homepage is already opened
+- Website is accessable
 
 **Steps:**
-1. Find a home button
-2. Click on the "home' button
+1. Enter website URL in the browser
+2. Find a home button
+3. Click on the "home' button
+
 
 
 **Expected Result:**
-I'm already on the homepage so website is just refreshed himself
-
+Home page opens successfully
 
 ## TC-002 — Open catalog page
 
@@ -101,7 +102,7 @@ User can return to shopping and continue browsing products without losing the cu
 
 **Steps:**
 1. Find a add to cart button
-2. Press enter to cart button
+2. Click the Add to cart button
 
 
 **Expected Result:**
@@ -150,7 +151,7 @@ Price in the cart are same to price in the catalog
 
 
 **Expected Result:**
-количество товаров в корзине одинаково с количесвтом выбраных товаров
+Product quantity in the cart matches the selected quantity
 
 ## TC-011 — Remove product from cart
 
@@ -161,7 +162,7 @@ Price in the cart are same to price in the catalog
 
 **Steps:**
 1. Find a cart icon
-2. Click on the cart icon
+2. Click on the cart icon                      
 3. Click on the remove button
 
 **Expected Result:**
@@ -189,7 +190,7 @@ Cart keeps the added product after page refresh.
 **Steps:**
 1. Find a search field on the website
 2. Click on the search field
-3. Enter the existing product: tomato pasta
+3. Enter the non-existing product: tomato pasta
 
 **Expected Result:**
 "Nothing found" message from the request
@@ -198,7 +199,7 @@ Cart keeps the added product after page refresh.
 ## TC-014 —  Search for an existing product
 
 
-**Priority:** High / Medium / Low  
+**Priority:**  Medium 
 **Preconditions:** 
 - Internet connection is stabl
 - Homepage is already opened

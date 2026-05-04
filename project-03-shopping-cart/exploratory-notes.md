@@ -1,7 +1,7 @@
 # Exploratory Testing Notes
 
 ## Feature tested
-Practice Test Shopping cart website  
+Shopping Cart / Product Add-to-Cart Flow
 https://sauce-demo.myshopify.com
 
 ## Environment
@@ -14,24 +14,23 @@ https://sauce-demo.myshopify.com
 Explore website pages behavior with unusual, edge-case, and mixed scenarios.
 
 ## What was checked
-- Valid username and password
-- Invalid username
-- Invalid password
-- Empty field
-- Special characters
-- Mixed language input
-- Pressing Enter instead of clicking Login
-- Leading/trailing spaces
+- opening the home page and catalog page
+- viewing product cards
+- opening product details
+- adding products to cart
+- checking cart page
+- changing product quantity if available
+- removing products from cart if available
+- checking cart total / subtotal
+- using search for product-related queries
+- basic navigation between home, catalog, product page, and cart
 
 ## Interesting behavior noticed
-- The page provides precise validation messages
-- If the username is wrong, the system shows “Your username is invalid!”
-- If the password is wrong, the system shows “Your password is invalid!”
-- Compared to other login pages I tested, this validation feedback felt more accurate and more specific
-- However, pressing Enter did not submit the form, which stood out as unusual
-
+- Cart opens as a top-page cart section instead of a separate cart page.
+- Search is case-insensitive: `Grey jacket` and `grey jacket` return the same result.
 ## Possible issues / observations
-- No response when submitting the form with the Enter key
-- Leading/trailing spaces are not trimmed automatically
-- The system may treat spaces as part of the username instead of handling them gracefully
+- Search does not match `greyjacket` to `Grey jacket` when words are typed without a space.
+- Cart shows an error when a very large quantity value is entered.
 
+## Conclusion
+Core shopping cart functionality worked as expected during the exploratory session. Product navigation, adding items to cart, removing items, and search behavior were mostly stable. One validation issue was found with very large quantity values, and one minor search-related UX observation was noted.

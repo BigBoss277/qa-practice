@@ -1,23 +1,28 @@
 # API Observations
 
 ## Goal
-Practice basic API testing and document findings.
 
-## What I checked
+Practice basic API testing and document request / response behavior.
+
+## What I Checked
+
 - Request method
 - Endpoint behavior
 - Response status code
 - Response body
-- Error handling
-- Missing or invalid input
+- Query parameters
+- JSON request body
+- Empty values
+- Special characters
 
-## Notes
-This file contains observations made during API practice.
+## Observations
 
-## Observation
-GET returns query parameters in the args field
-POST returns sent JSON body in the data field
-Special characters may be URL-encoded before being sent
+- GET requests return query parameters in the `args` field.
+- POST requests return sent JSON body data in the response.
+- Empty query parameter values can still be processed successfully.
+- Special characters may be URL-encoded before being sent.
+- API testing is useful because it shows request and response structure directly, without relying on the UI.
 
-##Conclusion
-API testing is different from UI testing because it shows request and response structure directly.
+## Conclusion
+
+This practice helped me understand how to check status codes, response bodies, query parameters, and JSON payloads in Postman.

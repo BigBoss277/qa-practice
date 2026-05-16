@@ -1,23 +1,30 @@
-# Checklist — Project 03: Shopping Cart
+# Checklist - Project 03: Shopping Cart
 
 ## Navigation
--  Open home page
--  Open catalog page
--  Open product details page
--  Navigate back from product page to catalog
--  Open cart page
--  Continue shopping from cart
+
+- [x] Open home page
+- [x] Open catalog page
+- [x] Open product details page
+- [x] Navigate back from product page to catalog
+- [x] Open cart page / cart section
+- [x] Continue shopping from cart
 
 ## Product and Cart
--  Add product to cart from product details page
--  Add product to cart from catalog page, if available
--  Verify product name in cart
--  Verify product price in cart
--  Verify product quantity in cart
--  Remove product from cart
--  Check cart after page refresh
+
+- [x] Add product to cart from product details page
+- [x] Verify product name in cart
+- [x] Verify product price in cart
+- [x] Verify product quantity in cart
+- [x] Remove product from cart
+- [x] Check cart after page refresh
 
 ## Search
--  Search for an existing product
--  Search for a non-existing product
--  Add searched product to cart, if available
+
+- [x] Search for an existing product
+- [x] Search for a non-existing product
+
+## Validation and Edge Cases
+
+- [x] Enter a very large quantity value in cart
+- [x] Check cart error handling
+- [x] Check whether cart rolls back to the previous valid quantity

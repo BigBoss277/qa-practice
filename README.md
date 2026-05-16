@@ -1,48 +1,36 @@
-# Test Plan Lite
+# QA Practice Portfolio
 
-Second QA practice project.
+This repository contains my manual QA practice projects and learning notes. It demonstrates test planning, checklist creation, test case design, bug reporting, exploratory testing, API testing basics, and SQL fundamentals for QA work.
 
-## Feature
-Practice Test Login Page
+## Projects
 
-## Goal of testing
-Check the functionality of the login page and identify possible issues.
+### Manual Testing
 
-## Test object
-https://practicetestautomation.com/practice-test-login/
+- `project-01-google-search` - Google Search manual testing practice
+- `project-02-login-page` - login form testing practice
+- `project-03-shopping-cart` - shopping cart and product catalog testing practice
 
-## Scope
-- Login page
-- Username field
-- Password field
-- Login submission
-- Validation messages after login attempt
+### API and SQL
 
-## Out of scope
-- Backend logic and database validation
-- Security testing
-- Performance testing
-- Cross-browser testing beyond the selected environment
+- `api-practice` - basic API testing practice with Postman Echo
+- `sql-practice` - SQL query examples for QA scenarios
 
-## Test types
-- Functional
-- Validation
-- UX
-- Exploratory
+### Additional Practice
 
-## Environment
-- Opera GX 128.0.5807.97, Windows
+- `extra-cases` - additional bug report examples
+- `review-and-classification` - bug classification and retest practice
 
-## Risks
-- This is a demo practice website, so some behaviors may be intentionally simplified
-- Validation logic may be limited compared to production systems
+## Skills Demonstrated
 
-## Entry criteria
-- Login page is accessible
-- Browser and internet connection are working
-- Username and password fields are visible and interactive
+- Manual functional testing
+- Test case writing
+- Checklist-based testing
+- Bug report writing
+- Exploratory testing
+- Severity and priority classification
+- Basic API testing
+- Basic SQL for QA
 
-## Exit criteria
-- Core checklist items are completed
-- Main test cases are executed
-- Observed issues are documented
+## Main Project Highlight
+
+The strongest project in this repository is `project-03-shopping-cart`. It includes a test plan, checklist, test cases, bug report, and exploratory testing notes for an e-commerce shopping cart flow.

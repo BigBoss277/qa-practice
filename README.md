@@ -1,19 +1,48 @@
-# QA Practice
+# Test Plan Lite
 
-This repository contains my QA learning projects and practice materials.
-It includes manual testing projects, API practice, and SQL basics.
+Second QA practice project.
 
-## Contents
-- `project-01-google-search` — manual testing practice on Google Search
-- `project-02-login-page` — manual testing practice on login page
-- `api-practice` — basic API testing in Postman
-- `sql-practice` — SQL basics for QA
+## Feature
+Practice Test Login Page
 
-## What I am learning
-- manual testing
-- test cases
-- bug reports
-- exploratory testing
-- Jira
-- API basics
-- SQL basics
+## Goal of testing
+Check the functionality of the login page and identify possible issues.
+
+## Test object
+https://practicetestautomation.com/practice-test-login/
+
+## Scope
+- Login page
+- Username field
+- Password field
+- Login submission
+- Validation messages after login attempt
+
+## Out of scope
+- Backend logic and database validation
+- Security testing
+- Performance testing
+- Cross-browser testing beyond the selected environment
+
+## Test types
+- Functional
+- Validation
+- UX
+- Exploratory
+
+## Environment
+- Opera GX 128.0.5807.97, Windows
+
+## Risks
+- This is a demo practice website, so some behaviors may be intentionally simplified
+- Validation logic may be limited compared to production systems
+
+## Entry criteria
+- Login page is accessible
+- Browser and internet connection are working
+- Username and password fields are visible and interactive
+
+## Exit criteria
+- Core checklist items are completed
+- Main test cases are executed
+- Observed issues are documented

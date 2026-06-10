@@ -17,6 +17,7 @@ This repository contains my manual QA practice projects and learning notes. It d
 
 ### Additional Practice
 
+- `theory-notes` - short QA theory notes with project-based examples
 - `extra-cases` - additional bug report examples
 - `review-and-classification` - bug classification and retest practice
 

@@ -20,6 +20,7 @@ This repository contains my manual QA practice projects and learning notes. It d
 - `theory-notes` - short QA theory notes with project-based examples
   - `qa-qc-testing.md` - QA vs QC vs Testing
   - `sdlc-stlc-agile.md` - SDLC, STLC, and Agile basics
+  - `test-types-test-levels.md` - test types and test levels
 - `extra-cases` - additional bug report examples
 - `review-and-classification` - bug classification and retest practice
 

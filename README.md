@@ -23,6 +23,7 @@ This repository contains my manual QA practice projects and learning notes. It d
   - `test-types-test-levels.md` - test types and test levels
   - `bug-report-severity-priority-defect-lifecycle.md` - bug reports, severity, priority, and defect lifecycle
   - `test-design-techniques.md` - black-box, white-box, and experience-based test design techniques
+  - `risk-based-testing-test-plan.md` - risk-based testing and test plan basics
 - `extra-cases` - additional bug report examples
 - `review-and-classification` - bug classification and retest practice
 

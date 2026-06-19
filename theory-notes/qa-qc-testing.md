@@ -18,7 +18,7 @@ They are not full QA examples by themselves, because QA is broader than testing.
 
 ## Interview Answer
 
-QA is the broader process of improving and assuring product quality. It focuses on preventing defects and building a good testing and development process.
+QA is the broader process of improving and ensuring product quality. It focuses on preventing defects and building a good testing and development process.
 
 QC is focused on checking the product and finding defects before release.
 

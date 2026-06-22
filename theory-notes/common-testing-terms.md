@@ -68,6 +68,42 @@ In the shopping cart project, if quantity validation was changed, sanity testing
 
 Sanity testing is a focused check after a small change or bug fix to make sure the changed area works correctly.
 
+## Positive Testing
+
+### Simple Explanation
+
+Positive testing checks that the system works correctly with valid input, expected actions, and normal user scenarios.
+
+It answers the question: "Does the system work when the user does everything correctly?"
+
+### Example From My Project
+
+In the login page project, a positive test is logging in with a valid username and a valid password.
+
+In the shopping cart project, a positive test is adding a product to the cart, opening the cart, and checking that the correct product is displayed.
+
+### Interview Answer
+
+Positive testing checks that the system works correctly with valid input and expected user actions.
+
+## Negative Testing
+
+### Simple Explanation
+
+Negative testing checks how the system behaves with invalid input, unexpected actions, missing data, or edge cases.
+
+It answers the question: "Does the system handle incorrect or unusual user behavior correctly?"
+
+### Example From My Project
+
+In the login page project, negative tests include entering an invalid username, entering an invalid password, leaving fields empty, or using leading and trailing spaces.
+
+In the shopping cart project, a negative test is entering a very large or unrealistic quantity value and checking how the cart handles it.
+
+### Interview Answer
+
+Negative testing checks how the system behaves with invalid input, unexpected actions, or edge cases.
+
 ## Exploratory Testing
 
 ### Simple Explanation

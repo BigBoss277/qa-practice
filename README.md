@@ -24,7 +24,7 @@ This repository contains my manual QA practice projects and learning notes. It d
   - `bug-report-severity-priority-defect-lifecycle.md` - bug reports, severity, priority, and defect lifecycle
   - `test-design-techniques.md` - black-box, white-box, and experience-based test design techniques
   - `risk-based-testing-test-plan.md` - risk-based testing and test plan basics
-  - `common-testing-terms.md` - regression testing, retesting, smoke testing, sanity testing, and exploratory testing
+  - `common-testing-terms.md` - regression testing, retesting, smoke testing, sanity testing, positive testing, negative testing, and exploratory testing
 - `extra-cases` - additional bug report examples
 - `review-and-classification` - bug classification and retest practice
 

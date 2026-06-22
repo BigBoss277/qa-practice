@@ -32,6 +32,42 @@ However, in the login page project, if the Enter key login issue was fixed, I wo
 
 Retesting is testing the same issue again after it was fixed to make sure the fix works.
 
+## Smoke Testing
+
+### Simple Explanation
+
+Smoke testing is a quick, basic test of the main functionality to check whether a new build is stable enough for deeper testing.
+
+It does not check everything in detail. It answers the question: "Is this build testable?"
+
+### Example From My Project
+
+In the login page project, smoke testing could include opening the login page, checking that username and password fields are visible, entering valid credentials, clicking the login button, and confirming that the user can log in.
+
+In the shopping cart project, smoke testing could include opening the website, viewing products, adding one product to the cart, opening the cart, and removing the product.
+
+### Interview Answer
+
+Smoke testing is a quick check of the main functionality to make sure a build is stable enough for further testing.
+
+## Sanity Testing
+
+### Simple Explanation
+
+Sanity testing is a narrow and focused test after a small change or bug fix. It checks whether the specific changed area works as expected.
+
+It does not test the whole system. It answers the question: "Does this specific change make sense and work correctly?"
+
+### Example From My Project
+
+In the login page project, if the Enter key issue was fixed, sanity testing would focus on checking whether pressing Enter now submits the login form correctly.
+
+In the shopping cart project, if quantity validation was changed, sanity testing would focus on checking quantity behavior and cart total calculation after that change.
+
+### Interview Answer
+
+Sanity testing is a focused check after a small change or bug fix to make sure the changed area works correctly.
+
 ## Exploratory Testing
 
 ### Simple Explanation

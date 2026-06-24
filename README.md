@@ -7,7 +7,7 @@ This repository contains my manual QA practice projects and learning notes. It d
 ### Manual Testing
 
 - `project-01-google-search` - Google Search manual testing practice
-- `project-02-login-page` - login form testing practice
+- `project-02-login-page` - login form testing practice with test design techniques
 - `project-03-shopping-cart` - shopping cart and product catalog testing practice
 
 ### API and SQL

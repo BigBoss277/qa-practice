@@ -27,6 +27,8 @@ Practice basic API testing and document request / response behavior.
 - POST requests can send data in the request body. When `Content-Type` is `application/json`, Postman Echo returns the sent values in the response `data` and `json` fields.
 - Changing a request method from GET to POST only updates the saved collection item after the request is saved.
 - An empty JSON body `{}` can still return `200 OK` in Postman Echo. In this case, the response showed `data: {}` and `json: null`, so the request was processed but no JSON values were returned.
+- PUT requests should be sent to an endpoint that supports PUT. Sending a PUT request to `/post` returned `404 Not Found`, but changing the endpoint to `https://postman-echo.com/put` returned `200 OK`.
+- Postman Echo does not permanently update stored data. It returns the sent request body back in the response, which is useful for practicing request and response validation.
 
 ## Conclusion
 

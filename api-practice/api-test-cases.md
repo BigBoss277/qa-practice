@@ -197,3 +197,54 @@ Response returned `200 OK`. The request body was sent as an empty JSON object, a
 Response returned `200 OK` and processed the query value without server error.
 
 **Status:** Pass
+
+---
+
+## TC-API-006 - Verify PUT request with JSON body
+
+**Priority:** Medium
+
+**Method:** PUT  
+**Endpoint:** `https://postman-echo.com/put`
+
+**Request Body:**
+
+```json
+{
+  "name": "BigBoss",
+  "role": "Human"
+}
+```
+
+**Steps:**
+1. Open Postman
+2. Select the PUT method
+3. Enter `https://postman-echo.com/put`
+4. Open Body -> raw -> JSON
+5. Send the request body with updated values
+6. Click Send
+
+**Expected Result:**
+- Status code is `200 OK`
+- Response body contains the sent JSON data
+- `name` value is `BigBoss`
+- `role` value is `Human`
+
+**Actual Result:**
+Response returned `200 OK` and included the sent JSON body:
+
+```json
+{
+  "data": {
+    "name": "BigBoss",
+    "role": "Human"
+  },
+  "json": {
+    "name": "BigBoss",
+    "role": "Human"
+  },
+  "url": "https://postman-echo.com/put"
+}
+```
+
+**Status:** Pass

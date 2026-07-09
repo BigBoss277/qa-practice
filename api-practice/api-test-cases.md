@@ -80,6 +80,18 @@ Response returned `200 OK`, kept `name` empty, and returned `role = qa`.
 
 **Priority:** High
 
+**Method:** POST  
+**Endpoint:** `https://postman-echo.com/post`
+
+**Request Body:**
+
+```json
+{
+  "name": "Maksim",
+  "role": "QA"
+}
+```
+
 **Steps:**
 1. Open Postman
 2. Select the POST method
@@ -90,7 +102,7 @@ Response returned `200 OK`, kept `name` empty, and returned `role = qa`.
 ```json
 {
   "name": "Maksim",
-  "role": "qa"
+  "role": "QA"
 }
 ```
 
@@ -98,10 +110,25 @@ Response returned `200 OK`, kept `name` empty, and returned `role = qa`.
 - Status code is `200 OK`
 - Response body contains the sent JSON data
 - `name` value is `Maksim`
-- `role` value is `qa`
+- `role` value is `QA`
+- Response contains JSON data in the `json` or `data` field
 
 **Actual Result:**
-Response returned `200 OK` and included the sent JSON body.
+Response returned `200 OK` and included the sent JSON body:
+
+```json
+{
+  "data": {
+    "name": "Maksim",
+    "role": "QA"
+  },
+  "json": {
+    "name": "Maksim",
+    "role": "QA"
+  },
+  "url": "https://postman-echo.com/post"
+}
+```
 
 **Status:** Pass
 
@@ -110,6 +137,15 @@ Response returned `200 OK` and included the sent JSON body.
 ## TC-API-004 - Verify POST request with an empty JSON body
 
 **Priority:** Medium
+
+**Method:** POST  
+**Endpoint:** `https://postman-echo.com/post`
+
+**Request Body:**
+
+```json
+{}
+```
 
 **Steps:**
 1. Open Postman
@@ -124,10 +160,19 @@ Response returned `200 OK` and included the sent JSON body.
 
 **Expected Result:**
 - Status code is `200 OK`
-- Response body contains an empty JSON object
+- Request is processed without server error
+- Response body contains an empty `data` object or otherwise shows that no JSON values were sent
 
 **Actual Result:**
-Response returned `200 OK` and included an empty JSON object.
+Response returned `200 OK`. The request body was sent as an empty JSON object, and the response showed empty data:
+
+```json
+{
+  "data": {},
+  "json": null,
+  "url": "https://postman-echo.com/post"
+}
+```
 
 **Status:** Pass
 

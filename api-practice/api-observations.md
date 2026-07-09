@@ -24,6 +24,9 @@ Practice basic API testing and document request / response behavior.
 - API testing is useful because it shows request and response structure directly, without relying on the UI.
 - Query parameters must be attached to a valid base URL. If only Params are entered without a valid endpoint URL, Postman cannot send the request and shows an invalid URL error.
 - For the first successful GET request, the base URL was `https://postman-echo.com/get`, and Postman generated the full URL with query parameters: `https://postman-echo.com/get?name=Maksim&role=QA`.
+- POST requests can send data in the request body. When `Content-Type` is `application/json`, Postman Echo returns the sent values in the response `data` and `json` fields.
+- Changing a request method from GET to POST only updates the saved collection item after the request is saved.
+- An empty JSON body `{}` can still return `200 OK` in Postman Echo. In this case, the response showed `data: {}` and `json: null`, so the request was processed but no JSON values were returned.
 
 ## Conclusion
 

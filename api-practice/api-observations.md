@@ -22,6 +22,8 @@ Practice basic API testing and document request / response behavior.
 - Empty query parameter values can still be processed successfully.
 - Special characters may be URL-encoded before being sent.
 - API testing is useful because it shows request and response structure directly, without relying on the UI.
+- Query parameters must be attached to a valid base URL. If only Params are entered without a valid endpoint URL, Postman cannot send the request and shows an invalid URL error.
+- For the first successful GET request, the base URL was `https://postman-echo.com/get`, and Postman generated the full URL with query parameters: `https://postman-echo.com/get?name=Maksim&role=QA`.
 
 ## Conclusion
 

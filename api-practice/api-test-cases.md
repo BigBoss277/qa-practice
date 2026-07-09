@@ -15,19 +15,40 @@ Postman Echo
 
 **Priority:** High
 
+**Method:** GET  
+**Endpoint:** `https://postman-echo.com/get`
+
+**Query Params:**
+- `name = Maksim`
+- `role = QA`
+
 **Steps:**
 1. Open Postman
 2. Select the GET method
-3. Enter `https://postman-echo.com/get?name=Maksim&role=qa`
-4. Click Send
+3. Enter the base URL: `https://postman-echo.com/get`
+4. Open the Params tab
+5. Add `name = Maksim`
+6. Add `role = QA`
+7. Click Send
 
 **Expected Result:**
 - Status code is `200 OK`
 - Response body contains `args.name = Maksim`
-- Response body contains `args.role = qa`
+- Response body contains `args.role = QA`
+- Response body contains the generated full URL with the sent query parameters
 
 **Actual Result:**
-Response returned `200 OK` and included the sent query parameters.
+Response returned `200 OK` and included the sent query parameters:
+
+```json
+{
+  "args": {
+    "name": "Maksim",
+    "role": "QA"
+  },
+  "url": "https://postman-echo.com/get?name=Maksim&role=QA"
+}
+```
 
 **Status:** Pass
 

@@ -29,6 +29,10 @@ Practice basic API testing and document request / response behavior.
 - An empty JSON body `{}` can still return `200 OK` in Postman Echo. In this case, the response showed `data: {}` and `json: null`, so the request was processed but no JSON values were returned.
 - PUT requests should be sent to an endpoint that supports PUT. Sending a PUT request to `/post` returned `404 Not Found`, but changing the endpoint to `https://postman-echo.com/put` returned `200 OK`.
 - Postman Echo does not permanently update stored data. It returns the sent request body back in the response, which is useful for practicing request and response validation.
+- PATCH can be used to send a partial update. In the practice request, only the `role` field was sent and returned in the response.
+- DELETE can be sent without a request body. Postman Echo returned `200 OK`, `data: {}`, and `json: null`.
+- A wrong or unknown endpoint can return `404 Not Found`, which is a useful negative API case.
+- Time estimates for practice tasks are only rough limits. If a small request is completed and understood in 5 minutes, that is fine; the important part is the result and the documented observation.
 
 ## Conclusion
 

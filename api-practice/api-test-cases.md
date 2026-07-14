@@ -8,6 +8,9 @@ Postman Echo
 
 - GET
 - POST
+- PUT
+- PATCH
+- DELETE
 
 ---
 
@@ -246,5 +249,112 @@ Response returned `200 OK` and included the sent JSON body:
   "url": "https://postman-echo.com/put"
 }
 ```
+
+**Status:** Pass
+
+---
+
+## TC-API-007 - Verify PATCH request with JSON body
+
+**Priority:** Medium
+
+**Method:** PATCH
+
+**Endpoint:** `https://postman-echo.com/patch`
+
+**Request Body:**
+
+```json
+{
+  "role": "Junior QA"
+}
+```
+
+**Steps:**
+1. Open Postman
+2. Select the PATCH method
+3. Enter `https://postman-echo.com/patch`
+4. Open Body -> raw -> JSON
+5. Send the request body with the updated field
+6. Click Send
+
+**Expected Result:**
+- Status code is `200 OK`
+- Response body contains the sent JSON data
+- `role` value is `Junior QA`
+
+**Actual Result:**
+Response returned `200 OK` and included the sent JSON body:
+
+```json
+{
+  "data": {
+    "role": "Junior QA"
+  },
+  "json": {
+    "role": "Junior QA"
+  },
+  "url": "https://postman-echo.com/patch"
+}
+```
+
+**Status:** Pass
+
+---
+
+## TC-API-008 - Verify DELETE request
+
+**Priority:** Medium
+
+**Method:** DELETE
+
+**Endpoint:** `https://postman-echo.com/delete`
+
+**Steps:**
+1. Open Postman
+2. Select the DELETE method
+3. Enter `https://postman-echo.com/delete`
+4. Click Send
+
+**Expected Result:**
+- Status code is `200 OK`
+- Request is processed without server error
+- Response body shows that no JSON body was sent
+
+**Actual Result:**
+Response returned `200 OK`. The request was processed, and the response showed no JSON body values:
+
+```json
+{
+  "data": {},
+  "json": null,
+  "url": "https://postman-echo.com/delete"
+}
+```
+
+**Status:** Pass
+
+---
+
+## TC-API-009 - Verify response for unknown endpoint
+
+**Priority:** Medium
+
+**Method:** GET
+
+**Endpoint:** `https://postman-echo.com/unknown`
+
+**Steps:**
+1. Open Postman
+2. Select the GET method
+3. Enter `https://postman-echo.com/unknown`
+4. Click Send
+
+**Expected Result:**
+- API returns a client-side error because the endpoint does not exist
+- Status code is `404 Not Found`
+
+**Actual Result:**
+Response returned `404 Not Found`.
 
 **Status:** Pass

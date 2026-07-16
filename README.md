@@ -12,7 +12,7 @@ This repository contains my manual QA practice projects and learning notes. It d
 
 ### API and SQL
 
-- `api-practice` - basic API testing practice with Postman Echo
+- `api-practice` - basic API testing practice with Postman Echo, documented test cases, observations, and an importable Postman collection
 - `sql-practice` - SQL query examples for QA scenarios
 
 ### Additional Practice

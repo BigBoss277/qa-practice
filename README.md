@@ -13,7 +13,7 @@ This repository contains my manual QA practice projects and learning notes. It d
 ### API and SQL
 
 - `api-practice` - basic API testing practice with Postman Echo, documented test cases, observations, and an importable Postman collection
-- `sql-practice` - SQL query examples for QA scenarios
+- [sql-practice](sql-practice/README.md) - SQLite QA practice with documented city filtering, orphan order checks, duplicate customer observations, and reproducible sample data
 
 ### Additional Practice
 

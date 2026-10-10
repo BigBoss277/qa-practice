@@ -1,97 +1,128 @@
 # SQL Practice Notes
 
-## Topics Covered
+## Practice Context
 
-- SELECT
-- FROM
-- WHERE
-- ORDER BY
-- LIMIT
-- COUNT
-- LIKE
-- JOIN
-- GROUP BY
+- Tool: DB Browser for SQLite.
+- Database: a local store practice database with `customers` and `orders`.
+- First guided practice session: August 27, 2026.
+- First-session results documented and rechecked: October 9, 2026.
 
-## Example Queries
+The first session covered reading data, filtering customers, finding orders
+without a matching customer, and finding repeated customer records. The
+`LEFT JOIN` and grouped checks were guided examples; independent practice
+with these techniques is still planned.
 
-### Example 1 - Select all customers
+## Working In DB Browser
+
+| Tab | Purpose |
+| --- | --- |
+| Database Structure | Inspect table names, columns, and constraints. |
+| Browse Data | Select a table and inspect its rows visually. |
+| Execute SQL | Write and run queries, then inspect the result and execution message. |
+
+When working with several statements, select the complete query to run.
+Keep the final semicolon at the end of that query. A semicolon separates
+statements; it does not belong between `FROM`, `WHERE`, and `ORDER BY`.
+
+The first-session queries are ordinary `SELECT` statements that read data.
+
+## Practice Tables
+
+| Table | Columns |
+| --- | --- |
+| `customers` | `ID`, `Name`, `Phone`, `Address`, `City` |
+| `orders` | `ID`, `customer_id`, `product`, `amount` |
+
+The intended relationship is `orders.customer_id = customers.ID`.
+This practice schema does not define a foreign key constraint for that
+relationship. It has no `orders.status` or `orders.order_id` columns.
+
+## First-Session Queries
+
+### Inspect The Tables
 
 ```sql
 SELECT * FROM customers;
+SELECT * FROM orders;
 ```
 
-### Example 2 - Filter by city
+The local snapshot contains 6 customer rows and 4 order rows.
+
+### Filter Customers By City
 
 ```sql
 SELECT * FROM customers
-WHERE city = 'Los Angeles';
+WHERE City = 'Los Angeles';
 ```
 
-### Example 3 - Sort by name
+Result: 2 rows, both named Maks, with customer IDs 43 and 46.
+
+### Find Orders Without A Matching Customer
 
 ```sql
-SELECT * FROM customers
-ORDER BY name;
+SELECT orders.ID, orders.customer_id, orders.product, orders.amount
+FROM orders
+LEFT JOIN customers ON orders.customer_id = customers.ID
+WHERE customers.ID IS NULL;
 ```
 
-### Example 4 - Count rows
+Result: order IDs 1 and 2 reference customer ID 37, which is missing from
+`customers`. This is a data integrity finding under the practice assumption
+that every order must belong to an existing customer.
+
+### Find Repeated Customer Records
 
 ```sql
-SELECT COUNT(*) AS total_customers
-FROM customers;
-```
-
-### Example 5 - Search by pattern
-
-```sql
-SELECT * FROM customers
-WHERE name LIKE 'M%';
-```
-
-### Example 6 - Simple JOIN
-
-```sql
-SELECT customers.name, orders.product
+SELECT Name, Phone, Address, City, COUNT(*) AS duplicate_count
 FROM customers
-JOIN orders ON customers.customer_id = orders.customer_id;
+GROUP BY Name, Phone, Address, City
+HAVING COUNT(*) > 1;
 ```
 
-### Example 7 - Find orders with a specific status
+Result: 3 groups, for Alex, John, and Maks; each group contains 2 rows with
+the same name, phone, address, and city. The rows have different IDs.
+Whether these repeated records are defects depends on customer uniqueness
+requirements.
 
-```sql
-SELECT order_id, customer_id, status
-FROM orders
-WHERE status = 'Pending';
-```
+## Terms From Practice
 
-### Example 8 - Count orders by status
+| Term | Meaning |
+| --- | --- |
+| `SELECT` | Chooses the columns to return; `*` returns all columns. |
+| `FROM` | Identifies the table to read. |
+| `WHERE` | Filters rows using a condition. |
+| `JOIN` | Combines rows from related tables using a matching condition. |
+| `LEFT JOIN` | Keeps every row from the left table; unmatched right-side columns are `NULL`. |
+| `COUNT(*)` | Counts rows, including repeated records. |
+| `GROUP BY` | Groups rows with the same values in the selected grouping columns. |
+| `HAVING` | Filters groups after grouping. |
 
-```sql
-SELECT status, COUNT(*) AS total_orders
-FROM orders
-GROUP BY status;
-```
+Terms reinforced during the October 8-9 review:
 
-## QA Use Cases
+- `ORDER BY` sorts result rows; the default direction is ascending.
+- `DESC` reverses the sort direction.
+- `AND` requires both conditions to be true for a row.
+- `OR` requires at least one condition to be true for a row.
+- `AND` and `OR` combine conditions, rather than automatically comparing
+  a column to a list of bare text values.
 
-- Check whether a test user exists in the database
-- Verify that an order was created after checkout
-- Find orders with a specific status
-- Compare UI data with database data
-- Check whether related records are connected correctly with JOIN
+## QA Interpretation
 
-## What I Learned
+- A city filter can help validate which customer records should be shown
+  by an application filter.
+- A missing customer reference is a data integrity finding when the data
+  model requires every order to belong to an existing customer.
+- Repeated customer records are candidates for investigation; query output
+  alone does not establish the application's uniqueness requirements.
+- A query can execute successfully and still return the wrong result for
+  the intended check, so the returned rows must be reviewed.
 
-- `SELECT` gets data from a table.
-- `WHERE` filters rows.
-- `ORDER BY` sorts results.
-- `COUNT` counts rows.
-- `LIKE` helps search by pattern.
-- `JOIN` connects related tables.
-- `GROUP BY` helps summarize data by category.
+## Further Practice
 
-## Difficulties
+- Search text using `LIKE`.
+- Limit results using `LIMIT`.
+- Practice `JOIN`, `GROUP BY`, and `HAVING` independently.
+- Continue small reviews of filtering, sorting, counting, `AND`, and `OR`.
 
-- SQL felt difficult at first.
-- JOIN was confusing in the beginning.
-- It became clearer after trying practical QA-style queries.
+Detailed first-session scenarios and outcomes:
+[QA SQL Scenarios](qa-sql-scenarios.md).

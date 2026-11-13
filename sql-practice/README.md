@@ -24,6 +24,7 @@ They are documented as practice, without claiming independent mastery.
 | [qa-sql-scenarios.md](qa-sql-scenarios.md) | First-session checks, expected behavior, actual results, and QA conclusions. |
 | [first-session-queries.sql](first-session-queries.sql) | The completed read-only queries from the first practice block. |
 | [sample-schema.sql](sample-schema.sql) | Table definitions and a reproducible synthetic dataset. |
+| [like-practice.md](like-practice.md) | Follow-up practice: customer name patterns with `LIKE`. |
 
 ## Results
 

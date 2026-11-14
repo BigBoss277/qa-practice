@@ -26,6 +26,7 @@ They are documented as practice, without claiming independent mastery.
 | [sample-schema.sql](sample-schema.sql) | Table definitions and a reproducible synthetic dataset. |
 | [like-practice.md](like-practice.md) | Follow-up practice: customer name patterns with `LIKE`. |
 | [limit-practice.md](limit-practice.md) | Follow-up practice: limiting a sorted or filtered result with `LIMIT`. |
+| [join-practice.md](join-practice.md) | Follow-up practice: comparing `INNER JOIN` and `LEFT JOIN` for order-to-customer checks. |
 
 ## Results
 
